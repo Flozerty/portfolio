@@ -1,10 +1,17 @@
 body {
+    cursor: url(cursor.png) 4 12,
+        auto;
+}
+
+body {
     font-size: 1.5em;
     font-family: 'Pacifico', cursive;
     width: 80%;
     margin: auto;
     text-align: center;
+
 }
+
 
 nav {
     display: flex;
@@ -17,4 +24,10 @@ nav {
     justify-content: space-around;
     width: 50%;
     background-color: rgb(186, 186, 186);
+}
+
+@media screen and (max-width: 1100px) {
+    #navLinks {
+        flex-direction: column;
+    }
 }
