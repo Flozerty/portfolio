@@ -1,12 +1,12 @@
-body {
-    cursor: url(cursor.png) 4 12,
-        auto;
+* {
+    cursor: url(src/cursor.png) 9 1, pointer;
+    font-family: 'Pacifico', cursive;
+
 }
 
 body {
-    font-size: 1.5em;
-    font-family: 'Pacifico', cursive;
     width: 80%;
+    font-size: 1.5em;
     margin: auto;
     text-align: center;
 
@@ -16,14 +16,15 @@ body {
 nav {
     display: flex;
     justify-content: space-between;
-
 }
+
 
 #navLinks {
     display: flex;
     justify-content: space-around;
     width: 50%;
     background-color: rgb(186, 186, 186);
+
 }
 
 @media screen and (max-width: 1100px) {
