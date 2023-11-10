@@ -15,7 +15,7 @@ $color2: rgb(16, 233, 86);
 
 //
 html {
-    background: linear-gradient(to top,
+    background: linear-gradient(to bottom,
             darkgreen, rgb(16, 233, 86), black, rgb(16, 233, 86), darkgreen);
 }
 
@@ -110,68 +110,72 @@ header {
     }
 }
 
-form {
-    padding: 5% 2%;
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #333333;
+#contact {
+    border: solid $color1 2px;
+    border-radius: 50px;
 
-
-    .identite,
-    .coordonnees {
+    form {
+        padding: 2%;
         display: flex;
-        flex-wrap: wrap;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        width: 50%;
-    }
+        color: $color1;
 
-    .error {
-        text-align: center;
-        width: 100%;
-        max-width: 300px;
-        font-size: 13px;
-        color: red;
-        background-color: transparent;
-        margin-bottom: 5px;
-    }
 
-    button {
-        background-color: #7791ff;
-        color: #fff;
-        border: 2px solid #7791ff;
-        border-radius: 10px;
-        padding: 10px 20px;
 
-        &:hover {
-            color: #7791ff;
-            background-color: #333333;
-            transition: color 0.5s, background-color 0.5s;
-            transform: scale(1.2);
+        .identite,
+        .coordonnees {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
         }
 
-        &:active {
-            color: #7791ff;
-            background-color: #333333;
-            transform: scale(0.9);
+        .error {
+            text-align: center;
+            width: 100%;
+            max-width: 300px;
+            font-size: 0.65em;
+            color: red;
+            background-color: $color1;
+            width: auto;
+            padding: 0 5px;
+            border: solid red 2px;
+            margin-bottom: 5px;
         }
 
-    }
+        button {
+            background-color: $color1;
+            color: $color2;
+            border: 2px solid $color1;
+            border-radius: 10px;
+            padding: 10px 20px;
 
-    textarea,
-    input[type="text"],
-    input[type="email"],
-    input[type="tel"] {
-        opacity: 0.7;
-        padding: 5px;
-        margin: 5px 0;
-        border: 2px solid #7791ff;
-        border-radius: 10px;
-        width: 100%;
-        max-width: 300px;
+            &:hover {
+                color: $color1;
+                background-color: $color2;
+                transition: color 0.5s, background-color 0.5s;
+                transform: scale(1.2);
+            }
+
+            &:active {
+
+                transform: scale(0.9);
+            }
+
+        }
+
+        textarea,
+        input {
+            opacity: 0.7;
+            padding: 5px;
+            margin: 5px 0;
+            border: 2px solid $color1;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 300px;
+        }
+
     }
 
 }

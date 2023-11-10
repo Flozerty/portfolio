@@ -12,12 +12,13 @@ document.getElementById("form").addEventListener("submit", (e) => {
     const emailError = document.getElementById("email-error");
     const phoneError = document.getElementById("phone-error");
 
-    const isNameValid = validateInput(name, nameError, "Le nom saisi n'est pas conforme");
-    const isFirstNameValid = validateInput(firstName, firstNameError, "Le prénom saisi n'est pas conforme");
-    const isEmailValid = validateEmail(email, emailError, "L'adresse e-mail saisi n'est pas valide");
-    const isPhoneValid = validatePhone(phone, phoneError, "Le numéro de téléphone saisi n'est pas valide");
+    const isNameValid = validateInput(name, nameError, "Saisissez votre nom");
+    const isFirstNameValid = validateInput(firstName, firstNameError, "Saisissez votre prénom");
+    const isEmailValid = validateEmail(email, emailError, "L'adresse e-mail saisie n'est pas valide");
+    const isPhoneValid = validatePhone(phone, phoneError, "Mettez votre numéro à 10 chiffre");
 
     if (!isNameValid || !isFirstNameValid || !isEmailValid || !isPhoneValid) return e.preventDefault();
+
 });
 
 /**
@@ -33,9 +34,12 @@ function validateInput(input, errorElement, errorMessage) {
 
     if (!inputPattern == (input.value)) {
         errorElement.innerText = errorMessage;
+        errorElement.classList.add('error');
         return false;
     } else {
         errorElement.innerText = "";
+        errorElement.classList.remove('error');
+
         return true;
     }
 }
@@ -45,9 +49,11 @@ function validateEmail(input, errorElement, errorMessage) {
 
     if (!emailPattern.test(input.value)) {
         errorElement.innerText = errorMessage;
+        errorElement.classList.add('error');
         return false;
     } else {
         errorElement.innerText = "";
+        errorElement.classList.remove('error');
         return true;
     }
 }
@@ -57,9 +63,11 @@ function validatePhone(input, errorElement, errorMessage) {
 
     if (!phonePattern.test(input.value)) {
         errorElement.innerText = errorMessage;
+        errorElement.classList.add('error');
         return false;
     } else {
         errorElement.innerText = "";
+        errorElement.classList.remove('error');
         return true;
     }
 }
