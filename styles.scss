@@ -19,8 +19,9 @@ html {
             darkgreen, rgb(16, 233, 86), black, rgb(16, 233, 86), darkgreen);
 }
 
+
 body {
-    margin: 100px 0 0 0;
+    margin-top: 100px;
     font-size: 1.5em;
     color: $color1;
     text-align: center;
@@ -47,14 +48,17 @@ header {
 
     img {
         height: 75%;
-        margin-left: 2%;
+        padding-left: 2%;
     }
 
     nav {
         width: 50%;
         height: 100%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
+
+        padding-right: 2%;
+
 
 
 
@@ -83,7 +87,7 @@ header {
         background-clip: text;
 
         h1 {
-            margin: 0;
+            margin-top: 0;
             font-size: 3em;
         }
     }
@@ -186,11 +190,14 @@ header {
 }
 
 footer {
+    p {
+        margin: 0;
+    }
 
+    margin-top: 10px;
+    padding: 5px;
     width: 100%;
-    background: linear-gradient(to bottom,
-            rgb(16, 233, 86), darkgreen);
-    ;
+    background-color: $color2 ;
 }
 
 @media screen and (max-width: 800px) {
@@ -201,13 +208,11 @@ footer {
 
 
     header {
-        height: 150px;
 
         nav {
             flex-direction: column;
             text-align: end;
             list-style-image: url(src/fleche.png);
-            padding-right: 20px;
         }
     }
 
