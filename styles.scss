@@ -23,6 +23,7 @@ body {
     margin: 100px 0 0 0;
     font-size: 1.5em;
     color: $color1;
+    text-align: center;
 }
 
 section {
@@ -42,7 +43,7 @@ header {
     left: 0;
     right: 0;
     height: 100px;
-    z-index: 100;
+    z-index: 5;
 
     img {
         height: 75%;
@@ -73,18 +74,17 @@ header {
 
     #presentation {
         position: absolute;
-        color: rgb(16, 233, 86);
+
+        background: linear-gradient(to right,
+                white, $color2, white, $color2, white);
+        -webkit-background1-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
 
         h1 {
-            margin-top: 0;
+            margin: 0;
             font-size: 3em;
-            background: linear-gradient(to right,
-                    $color2, darkgreen, $color2);
-            -webkit-background1-clip: text;
-            -webkit-text-fill-color: transparent;
-            -webkit-background-clip: text;
-            background-clip: text;
-
         }
     }
 }
@@ -103,7 +103,6 @@ header {
     #lol,
     #spotify {
         width: 45%;
-
         border: solid;
     }
 }
@@ -131,7 +130,6 @@ header {
         }
 
         .error {
-            text-align: center;
             width: 100%;
             max-width: 300px;
             font-size: 0.65em;
