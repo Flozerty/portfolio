@@ -66,21 +66,23 @@
         <form id="form" aria-labelledby="formTitle" novalidate>
             <div class="identite">
                 <label for="name"></label>
-                <input type="text" name="name" id="name" placeholder="Nom &ast;" required>
+                <input type="text" name="name" id="name" placeholder="Nom &ast;" required autocomplete="family-name">
                 <span id="name-error"></span>
 
                 <label for="firstName"></label>
-                <input type="text" name="firstName" id="firstName" placeholder="Prénom &ast;" required>
+                <input type="text" name="firstName" id="firstName" placeholder="Prénom &ast;" required
+                    autocomplete="given-name">
                 <span id="firstName-error"></span>
             </div>
 
             <div class="coordonnees">
                 <label for="email"></label>
-                <input type="email" name="email" id="email" placeholder="Adresse e-mail &ast;" required>
+                <input type="email" name="email" id="email" placeholder="Adresse e-mail &ast;" required
+                    autocomplete="email">
                 <span id="email-error"></span>
 
                 <label for="phone"></label>
-                <input type="text" name="phone" id="phone" placeholder="Téléphone &ast;" required>
+                <input type="text" name="phone" id="phone" placeholder="Téléphone &ast;" required autocomplete="tel">
                 <span id="phone-error"></span>
             </div>
 
