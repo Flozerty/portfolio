@@ -1,5 +1,5 @@
 const textarea = document.getElementById("textarea");
-textarea.placeholder = "Laissez-nous un message!\n(limite de 500 caractères)";
+textarea.placeholder = "Laissez-moi un mot!\n(limite de 500 caractères)";
 
 document.getElementById("form").addEventListener("submit", (e) => {
     const name = document.getElementById("name");
