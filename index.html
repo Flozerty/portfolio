@@ -26,16 +26,26 @@
     <section id="divTitle">
         <img src="src/fondClavier.jpg" id="imgProfil" />
         <div id="presentation">
-            <h1 id="name">Floris Louërat</h1>
+            <h1 id="me">Floris Louërat</h1>
             <p>développeur Web FullStack en formation</p>
         </div>
     </section>
 
     <section id="about">
         <h2>about</h2>
-        Présentation : Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, atque ut pariatur voluptatibus
-        nulla beatae saepe quam autem blanditiis obcaecati. Dolorum possimus at officia libero, blanditiis ex pariatur
-        laudantium labore.
+        <div id='description'>
+
+            Présentation : Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore, atque ut pariatur
+            voluptatibus
+            nulla beatae saepe quam autem blanditiis obcaecati. Dolorum possimus at officia libero, blanditiis ex
+            pariatur
+            laudantium labore.
+
+            <p>passion & personnalité :</p>
+        </div>
+        <div id="spotify">musique préférée spotify api</div>
+        <div id="lol">lol ranking api</div>
+
     </section>
 
     <section id="tools">
@@ -48,11 +58,41 @@
 
     <section id="contact">
         <h2>contact</h2>
-    </section>
-    <footer>
-        <p>Conçu et réalisé par Floris Louërat</p>
-        <p>©Copyright 2023 - Floris Louërat</p>
-    </footer>
+        <section class="form">
+            <h2 id="formTitle">Contactez-moi!</h2>
+
+            <form id="form" aria-labelledby="formTitle" novalidate>
+                <div class="identite">
+                    <label for="name"></label>
+                    <input type="text" name="name" id="name" placeholder="Nom" required>
+                    <span id="name-error" class="error"></span>
+
+                    <label for="firstName"></label>
+                    <input type="text" name="firstName" id="firstName" placeholder="Prénom" required>
+                    <span id="firstName-error" class="error"></span>
+                </div>
+
+                <div class="coordonnees">
+                    <label for="email"></label>
+                    <input type="email" name="email" id="email" placeholder="Adresse e-mail" required>
+                    <span id="email-error" class="error"></span>
+
+                    <label for="phone"></label>
+                    <input type="text" name="phone" id="phone" placeholder="Téléphone" required>
+                    <span id="phone-error" class="error"></span>
+                </div>
+
+                <textarea rows="10" cols="40" id="textarea" minlength="1" maxlength="500"></textarea>
+                <button type="submit" id="send">Envoyer</button>
+            </form>
+        </section>
+
+        <footer>
+            <p>Conçu et réalisé par Floris Louërat</p>
+            <p>©Copyright 2023 - Floris Louërat</p>
+        </footer>
+
+        <script src="scripts/form.js"></script>
 </body>
 
 </html>
