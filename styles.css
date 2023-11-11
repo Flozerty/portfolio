@@ -4,14 +4,23 @@
 }
 
 html {
-  background: linear-gradient(to bottom, darkgreen, rgb(16, 233, 86), black, rgb(16, 233, 86), darkgreen);
+  background-color: #333333;
 }
 
 body {
   margin: 100px 0 0 0;
   font-size: 1.5em;
-  color: #333333;
   text-align: center;
+}
+
+main {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, rgb(16, 233, 86), darkgreen, rgb(16, 233, 86), white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 section {
@@ -20,6 +29,7 @@ section {
 }
 section h2 {
   margin: 1em auto;
+  color: rgb(16, 233, 86);
 }
 
 hr {
@@ -96,13 +106,19 @@ header nav a {
   border: solid;
 }
 
+#projects #portfolio {
+  border: solid black 2px;
+  height: 100px;
+  margin: 50px 0;
+}
+
 #contact form {
   padding: 2%;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: #333333;
-  border: solid #333333 2px;
+  border: solid rgb(16, 233, 86) 2px;
   border-radius: 50px;
   padding: 25px;
 }
@@ -149,12 +165,6 @@ header nav a {
   border-radius: 10px;
   width: 100%;
   max-width: 300px;
-}
-
-#projects #portfolio {
-  border: solid black 2px;
-  height: 100px;
-  margin: 50px 0;
 }
 
 footer {
