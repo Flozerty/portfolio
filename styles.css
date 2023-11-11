@@ -16,7 +16,17 @@ body {
 
 section {
   width: 80%;
-  margin: auto;
+  margin: 3em auto;
+}
+section h2 {
+  margin: 1em auto;
+}
+
+hr {
+  width: 70%;
+  margin: 0 auto;
+  border-color: #333333;
+  border-width: 1px 0 0 0;
 }
 
 header {
@@ -43,6 +53,10 @@ header nav {
   display: flex;
   justify-content: space-between;
   padding-right: 2%;
+}
+header nav a {
+  text-decoration: none;
+  color: #333333;
 }
 
 #divTitle {
@@ -137,7 +151,7 @@ header nav {
   max-width: 300px;
 }
 
-#projets #portfolio {
+#projects #portfolio {
   border: solid black 2px;
   height: 100px;
   margin: 50px 0;
