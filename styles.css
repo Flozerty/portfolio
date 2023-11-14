@@ -68,6 +68,9 @@ header nav a {
   text-decoration: none;
   color: #333333;
 }
+header nav a:hover {
+  color: white;
+}
 
 #divTitle {
   position: relative;
