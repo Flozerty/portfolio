@@ -141,9 +141,41 @@ header {
 
 #projects {
     #portfolio {
-        border: solid black 2px;
-        height: 100px;
-        margin: 50px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        div {
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: dotted $color2 1px;
+            margin: 20px 0;
+
+            p {
+                width: 50%;
+            }
+
+
+            img {
+                max-width: 50%;
+                height: 200px;
+            }
+
+            &:hover {
+                img {
+                    transition: transform 0.2s;
+                    transform: scale(1.2);
+                }
+            }
+
+            &:active {
+                transition: transform 0s;
+                transform: scale(0.9);
+            }
+        }
+
     }
 }
 
@@ -194,7 +226,6 @@ header {
             }
 
             &:active {
-
                 transform: scale(0.9);
             }
 
