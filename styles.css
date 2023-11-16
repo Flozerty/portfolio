@@ -124,6 +124,7 @@ header nav li:hover a {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  text-align: justify;
 }
 #about #description {
   width: 100%;
