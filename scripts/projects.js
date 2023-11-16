@@ -30,25 +30,25 @@ class Project {
     };
 }
 
-const Project1 = new Project(
+new Project(
     'Pokédex',
     '../src/Ppokedex.png',
     'un pokedex',
 )
 
-const Project2 = new Project(
+new Project(
     'Gaming Place',
     '../src/Pgamingplace.png',
     'un site vitrine de créateurs de jeux',
 )
 
-const Project3 = new Project(
+new Project(
     'Ace-Attorney Remaster',
     '../src/Paceattorney.png',
     'un remaster du jeu Ace Attorney',
 )
 
-const Project4 = new Project(
+new Project(
     'Portfolio',
     '../src/Pportfolio.png',
     'Le portfolio ici présent!',

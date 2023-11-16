@@ -136,7 +136,7 @@ header {
         h1 {
             background: linear-gradient(to right, $color2, white, $color2, white, $color2);
             background-size: 200% 100%;
-            animation: colorScroll 3s linear infinite;
+            animation: colorScroll 2.5s linear infinite;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             -webkit-background-clip: text;
@@ -177,6 +177,44 @@ header {
 
     #competencesDiv {
         width: 70%;
+
+        div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 40px;
+            margin: 4px 0;
+
+            p {
+                display: none;
+            }
+
+            h4 {
+                width: 25%;
+                margin: 0;
+
+            }
+
+            img {
+                max-width: 25%;
+                height: 100%;
+            }
+
+            .progressBarFix {
+                display: flex;
+                justify-content: start;
+                width: 50%;
+                height: 10px;
+                background-color: rgb(125, 125, 125);
+                border-radius: 5px;
+            }
+
+            .progressBar {
+                background-color: #4CAF50;
+                border-radius: 5px;
+                height: 10px;
+            }
+        }
     }
 
     #cvDiv {

@@ -109,7 +109,7 @@ header nav li:hover a {
 #divTitle #presentation h1 {
   background: linear-gradient(to right, rgb(16, 233, 86), white, rgb(16, 233, 86), white, rgb(16, 233, 86));
   background-size: 200% 100%;
-  animation: colorScroll 3s linear infinite;
+  animation: colorScroll 2.5s linear infinite;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -144,6 +144,37 @@ header nav li:hover a {
 }
 #tools #competencesDiv {
   width: 70%;
+}
+#tools #competencesDiv div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  margin: 4px 0;
+}
+#tools #competencesDiv div p {
+  display: none;
+}
+#tools #competencesDiv div h4 {
+  width: 25%;
+  margin: 0;
+}
+#tools #competencesDiv div img {
+  max-width: 25%;
+  height: 100%;
+}
+#tools #competencesDiv div .progressBarFix {
+  display: flex;
+  justify-content: start;
+  width: 50%;
+  height: 10px;
+  background-color: rgb(125, 125, 125);
+  border-radius: 5px;
+}
+#tools #competencesDiv div .progressBar {
+  background-color: #4CAF50;
+  border-radius: 5px;
+  height: 10px;
 }
 #tools #cvDiv {
   width: 30%;
