@@ -35,6 +35,7 @@ new Project(
     'Pokédex',
     '../src/Ppokedex.png',
     'un pokedex',
+    'https://flozerty.github.io/Flokedex-JSavance/'
 )
 
 new Project(
@@ -54,4 +55,5 @@ new Project(
     'Portfolio',
     '../src/Pportfolio.png',
     'Le portfolio ici présent!',
+    'https://flozerty.github.io/portfolio/'
 )
