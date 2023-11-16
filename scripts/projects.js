@@ -1,10 +1,11 @@
 const portfolio = document.getElementById('portfolio');
 
 class Project {
-    constructor(title, image, description) {
+    constructor(title, image, description, link) {
         this.title = title;
         this.image = image;
         this.description = description;
+        this.link = link;
 
         this.createProjectElement();
     }
@@ -46,6 +47,7 @@ new Project(
     'Ace-Attorney Remaster',
     '../src/Paceattorney.png',
     'un remaster du jeu Ace Attorney',
+    'https://flozerty.github.io/ace-attorney-remaster/'
 )
 
 new Project(
