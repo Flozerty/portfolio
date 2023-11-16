@@ -168,14 +168,14 @@ header nav li:hover a {
   display: flex;
   justify-content: start;
   width: 50%;
-  height: 10px;
+  height: 12px;
   background-color: rgb(125, 125, 125);
-  border-radius: 5px;
+  border-radius: 6px;
 }
 #tools #competencesDiv div .progressBar {
   background-color: #4CAF50;
-  border-radius: 5px;
-  height: 10px;
+  border-radius: 6px;
+  height: 100%;
 }
 #tools #cvDiv {
   width: 30%;
@@ -203,6 +203,7 @@ header nav li:hover a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   border: dotted rgb(16, 233, 86) 1px;
   margin: 20px 0;
 }
@@ -211,7 +212,7 @@ header nav li:hover a {
 }
 #projects #portfolio div img {
   max-width: 50%;
-  height: 200px;
+  max-height: 200px;
 }
 #projects #portfolio div:hover img {
   transition: transform 0.2s;

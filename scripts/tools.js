@@ -28,6 +28,8 @@ class Tool {
         this.progressBar.classList.add('progressBar');
         this.progressBar.style.width = this.nbr + '%';
 
+        this.progressBar.title = `${this.nbr}%`;
+
         this.progressBarFix.appendChild(this.progressBar);
 
         this.Tcard.appendChild(this.img);
