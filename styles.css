@@ -138,6 +138,7 @@ header nav li:hover a {
 #tools {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 #tools h2 {
   width: 100%;

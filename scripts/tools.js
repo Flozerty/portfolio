@@ -39,9 +39,11 @@ class Tool {
     }
 }
 
-new Tool('HTML', 80);
-new Tool('CSS', 85);
-new Tool('JS', 70);
+new Tool('HTML', 85);
+new Tool('CSS', 90);
+new Tool('JS', 80);
+new Tool('Git', 85);
 new Tool('Sass', 65);
 new Tool('Angular', 50);
+new Tool('node', 50);
 new Tool('React', 70);
