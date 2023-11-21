@@ -18,7 +18,7 @@ class Tool {
         this.toolValue.innerHTML = this.nbr;
 
         this.img = document.createElement('img');
-        this.img.src = `../src/${this.tool}.png`;
+        this.img.src = `../src/tools/${this.tool}.png`;
         this.img.alt = `logo de ${this.tool}`;
 
         this.progressBarFix = document.createElement('div');

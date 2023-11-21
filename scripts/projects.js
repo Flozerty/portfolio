@@ -33,27 +33,27 @@ class Project {
 
 new Project(
     'Pokédex',
-    '../src/Ppokedex.png',
+    '../src/projects/Ppokedex.png',
     'un pokedex',
     'https://flozerty.github.io/Flokedex-JSavance/'
 )
 
 new Project(
     'Gaming Place',
-    '../src/Pgamingplace.png',
+    '../src/projects/Pgamingplace.png',
     'un site vitrine de créateurs de jeux',
 )
 
 new Project(
     'Ace-Attorney Remaster',
-    '../src/Paceattorney.png',
+    '../src/projects/Paceattorney.png',
     'un remaster du jeu Ace Attorney',
     'https://flozerty.github.io/ace-attorney-remaster/'
 )
 
 new Project(
     'Portfolio',
-    '../src/Pportfolio.png',
+    '../src/projects/Pportfolio.png',
     'Le portfolio ici présent!',
     'https://flozerty.github.io/portfolio/'
 )
