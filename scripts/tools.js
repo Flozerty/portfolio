@@ -11,15 +11,18 @@ class Tool {
     createToolElement() {
         this.Tcard = document.createElement('div');
 
-        this.toolName = document.createElement('h4');
+        this.toolName = document.createElement('p');
+        this.toolName.classList.add('pName');
         this.toolName.innerHTML = this.tool;
 
         this.toolValue = document.createElement('p');
+        this.toolValue.classList.add('pValue');
         this.toolValue.innerHTML = this.nbr;
 
         this.img = document.createElement('img');
         this.img.src = `../src/tools/${this.tool}.png`;
         this.img.alt = `logo de ${this.tool}`;
+
 
         this.progressBarFix = document.createElement('div');
         this.progressBarFix.classList.add('progressBarFix');

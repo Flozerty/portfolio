@@ -20,6 +20,7 @@ class Project {
         this.Pimg.src = this.image;
         this.Pimg.alt = `image de ${this.title}`;
 
+
         this.Pdesc = document.createElement('p');
         this.Pdesc.innerHTML = this.description;
 
