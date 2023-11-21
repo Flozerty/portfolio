@@ -11,24 +11,11 @@
     background-position: right bottom;
   }
 }
-html {
-  background-color: #333333;
-}
-
 body {
   margin: 75px 0 0 0;
   font-size: 1.5em;
   text-align: center;
-}
-
-main {
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(to bottom, rgb(16, 233, 86), darkgreen, rgb(16, 233, 86), white);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
+  background-color: #333333;
 }
 
 section {
@@ -100,7 +87,7 @@ header nav li:hover a {
 }
 #divTitle #presentation {
   position: absolute;
-  background: linear-gradient(to right, rgb(16, 233, 86), white, rgb(16, 233, 86), white, rgb(16, 233, 86));
+  background: linear-gradient(to right, white, rgb(16, 233, 86), white, rgb(16, 233, 86), white);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -120,60 +107,68 @@ header nav li:hover a {
   position: relative;
 }
 
-#about {
+main {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, rgb(16, 233, 86), white, rgb(16, 233, 86), white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+main #about {
   display: flex;
   justify-content: space-around;
   text-align: left;
 }
-#about #description {
+main #about #description {
   width: 70%;
   border: solid;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#about #descDivs {
+main #about #descDivs {
   width: 100%;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
-#about #lol,
-#about #spotify {
+main #about #lol,
+main #about #spotify {
   width: 45%;
   border: solid;
 }
-
-#tools {
+main #tools {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
-#tools h2 {
+main #tools h2 {
   width: 100%;
 }
-#tools #competencesDiv {
+main #tools #competencesDiv {
   width: 70%;
 }
-#tools #competencesDiv div {
+main #tools #competencesDiv div {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 40px;
   margin: 4px 0;
 }
-#tools #competencesDiv div p {
+main #tools #competencesDiv div p {
   display: none;
 }
-#tools #competencesDiv div h4 {
+main #tools #competencesDiv div h4 {
   width: 25%;
   margin: 0;
 }
-#tools #competencesDiv div img {
+main #tools #competencesDiv div img {
   max-width: 25%;
   height: 100%;
 }
-#tools #competencesDiv div .progressBarFix {
+main #tools #competencesDiv div .progressBarFix {
   display: flex;
   justify-content: start;
   width: 50%;
@@ -181,33 +176,32 @@ header nav li:hover a {
   background-color: rgb(125, 125, 125);
   border-radius: 6px;
 }
-#tools #competencesDiv div .progressBar {
+main #tools #competencesDiv div .progressBar {
   background-color: #4CAF50;
   border-radius: 6px;
   height: 100%;
 }
-#tools #cvDiv {
+main #tools #cvDiv {
   width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#tools #cvDiv img {
+main #tools #cvDiv img {
   width: 50%;
 }
-#tools #cvDiv a {
+main #tools #cvDiv a {
   color: rgb(16, 233, 86);
 }
-#tools #cvDiv a:hover {
+main #tools #cvDiv a:hover {
   box-shadow: 0 0 10px rgb(16, 233, 86);
 }
-
-#projects #portfolio {
+main #projects #portfolio {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-#projects #portfolio div {
+main #projects #portfolio div {
   width: 45%;
   display: flex;
   flex-direction: column;
@@ -216,75 +210,30 @@ header nav li:hover a {
   border: dotted rgb(16, 233, 86) 1px;
   margin: 20px 0;
 }
-#projects #portfolio div p {
+main #projects #portfolio div p {
   width: 50%;
 }
-#projects #portfolio div img {
+main #projects #portfolio div img {
   max-width: 50%;
   max-height: 200px;
 }
-#projects #portfolio div:hover img {
+main #projects #portfolio div:hover img {
   transition: transform 0.2s;
   transform: scale(1.2);
 }
-#projects #portfolio div:active {
+main #projects #portfolio div:active {
   transition: transform 0s;
   transform: scale(0.9);
 }
-
-#contact form {
-  padding: 2%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #333333;
-  border: solid rgb(16, 233, 86) 2px;
-  border-radius: 50px;
-  padding: 25px;
+main #contact #socials img {
+  width: 80px;
+  border-radius: 50%;
+  transition: transform 0.3s, background-color 0.3s;
+  margin: 0 10px;
 }
-#contact form .identite,
-#contact form .coordonnees {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 50%;
-}
-#contact form .error {
-  width: 100%;
-  max-width: 300px;
-  font-size: 0.65em;
-  color: red;
-  background-color: #333333;
-  width: auto;
-  padding: 0 5px;
-  border: solid red 2px;
-  margin-bottom: 5px;
-}
-#contact form button {
-  background-color: #333333;
-  color: rgb(16, 233, 86);
-  border: 2px solid #333333;
-  border-radius: 10px;
-  padding: 10px 20px;
-}
-#contact form button:hover {
-  color: #333333;
+main #contact #socials img:hover {
   background-color: rgb(16, 233, 86);
-  transition: color 0.5s, background-color 0.5s;
   transform: scale(1.2);
-}
-#contact form button:active {
-  transform: scale(0.9);
-}
-#contact form textarea,
-#contact form input {
-  opacity: 0.7;
-  padding: 5px;
-  margin: 5px 0;
-  border: 2px solid #333333;
-  border-radius: 10px;
-  width: 100%;
-  max-width: 300px;
 }
 
 footer {
