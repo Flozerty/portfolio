@@ -145,29 +145,37 @@ main {
 
     #about {
         display: flex;
-        justify-content: space-around;
-        text-align: left;
+        justify-content: space-between;
+        align-items: center;
+        text-align: right;
 
         #description {
             width: 70%;
             display: flex;
             flex-direction: column;
             align-items: center;
-        }
 
-        #descDivs {
-            width: 100%;
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
+            p {
+                margin-bottom: 20px;
+                margin-top: 0;
+            }
 
-            #lol,
-            #spotify {
-                width: 45%;
-                border: solid;
-                display: none;
+            #descDivs {
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+
+                #lol,
+                #spotify {
+                    width: 45%;
+                    border: solid;
+                    display: none;
+                }
             }
         }
+
+
 
 
     }

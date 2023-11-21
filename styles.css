@@ -118,8 +118,9 @@ main {
 }
 main #about {
   display: flex;
-  justify-content: space-around;
-  text-align: left;
+  justify-content: space-between;
+  align-items: center;
+  text-align: right;
 }
 main #about #description {
   width: 70%;
@@ -127,14 +128,18 @@ main #about #description {
   flex-direction: column;
   align-items: center;
 }
-main #about #descDivs {
+main #about #description p {
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+main #about #description #descDivs {
   width: 100%;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
-main #about #descDivs #lol,
-main #about #descDivs #spotify {
+main #about #description #descDivs #lol,
+main #about #description #descDivs #spotify {
   width: 45%;
   border: solid;
   display: none;
