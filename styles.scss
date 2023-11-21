@@ -180,6 +180,11 @@ main {
             width: 100%;
         }
 
+        p {
+            width: 100%;
+            margin: 0 0 25px 0;
+        }
+
         #competencesDiv {
             width: 70%;
 
@@ -320,15 +325,17 @@ footer {
 
         nav {
             flex-direction: column;
-            text-align: end;
-            list-style-image: url(src/fleche.png) 50px;
+            align-items: flex-end;
+
+            li {
+                justify-content: end;
+            }
         }
     }
 }
 
 @media screen and (min-width: 801px) {
     nav {
-        list-style: none;
         align-items: center;
 
         a {

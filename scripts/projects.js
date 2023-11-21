@@ -54,6 +54,6 @@ new Project(
 new Project(
     'Portfolio',
     '../src/projects/Pportfolio.png',
-    'Le portfolio ici présent!',
+    'Le portfolio que vous voyez ici présent!',
     'https://flozerty.github.io/portfolio/'
 )

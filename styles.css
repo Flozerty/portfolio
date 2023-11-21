@@ -147,6 +147,10 @@ main #tools {
 main #tools h2 {
   width: 100%;
 }
+main #tools p {
+  width: 100%;
+  margin: 0 0 25px 0;
+}
 main #tools #competencesDiv {
   width: 70%;
 }
@@ -251,13 +255,14 @@ footer p {
   }
   header nav {
     flex-direction: column;
-    text-align: end;
-    list-style-image: url(src/fleche.png) 50px;
+    align-items: flex-end;
+  }
+  header nav li {
+    justify-content: end;
   }
 }
 @media screen and (min-width: 801px) {
   nav {
-    list-style: none;
     align-items: center;
   }
   nav a {
