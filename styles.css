@@ -123,7 +123,6 @@ main #about {
 }
 main #about #description {
   width: 70%;
-  border: solid;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -134,10 +133,11 @@ main #about #descDivs {
   justify-content: space-around;
   flex-wrap: wrap;
 }
-main #about #lol,
-main #about #spotify {
+main #about #descDivs #lol,
+main #about #descDivs #spotify {
   width: 45%;
   border: solid;
+  display: none;
 }
 main #tools {
   display: flex;

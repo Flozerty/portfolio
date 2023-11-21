@@ -28,6 +28,10 @@ class Project {
         this.Pcard.appendChild(this.Pdesc);
 
         portfolio.appendChild(this.Pcard);
+
+        this.Pcard.addEventListener('click', () => {
+            window.location.href = this.link;
+        });
     };
 }
 
@@ -42,6 +46,8 @@ new Project(
     'Gaming Place',
     '../src/projects/Pgamingplace.png',
     'un site vitrine de créateurs de jeux',
+    'https://flozerty.github.io/TP-final/'
+
 )
 
 new Project(
