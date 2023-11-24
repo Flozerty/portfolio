@@ -247,14 +247,6 @@ main #projects #portfolio .project .projectMain img {
   max-width: 50%;
   max-height: 200px;
 }
-main #projects #portfolio .project .projectMain:hover img {
-  transition: transform 0.2s;
-  transform: scale(1.2);
-}
-main #projects #portfolio .project .projectMain:active {
-  transition: transform 0s;
-  transform: scale(0.9);
-}
 main #projects #portfolio .project .projectTools {
   width: 25%;
   display: flex;
@@ -264,6 +256,14 @@ main #projects #portfolio .project .projectTools {
 }
 main #projects #portfolio .project .projectTools img {
   width: 25%;
+}
+main #projects #portfolio .project:hover .projectMain img {
+  transition: transform 0.2s;
+  transform: scale(1.2);
+}
+main #projects #portfolio .project:active {
+  transition: transform 0s;
+  transform: scale(0.9);
 }
 main #contact #socials img {
   width: 80px;
