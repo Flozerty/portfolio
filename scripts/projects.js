@@ -47,7 +47,7 @@ new Project(
     'Gaming Place',
     './src/projects/gamingplace.png',
     'un site vitrine de créateurs de jeux',
-    'https://flozerty.github.io/TP-final/'
+    'https://flozerty.github.io/TP-JS/'
 
 )
 
