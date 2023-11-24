@@ -44,11 +44,12 @@ class Tool {
     }
 }
 
-new Tool('html', 85);
-new Tool('css', 90);
-new Tool('js', 80);
-new Tool('git', 85);
-new Tool('sass', 85);
-new Tool('angular', 65);
-new Tool('node', 60);
-new Tool('react', 50);
+new Tool('html', 87);
+new Tool('css', 92);
+new Tool('js', 88);
+new Tool('git', 97);
+new Tool('sass', 90);
+new Tool('angular', 70);
+new Tool('ts', 83);
+new Tool('react', 55);
+new Tool('node', 55);
