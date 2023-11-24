@@ -38,13 +38,16 @@ class Project {
 
             this.toolsPart.appendChild(this.toolImg);
         }
-
-
         this.mainPart.appendChild(this.Pname);
         this.mainPart.appendChild(this.Pimg);
         this.mainPart.appendChild(this.Pdesc);
 
-        this.Pcard.appendChild(this.mainPart);
+        if (Array.from(portfolio.child))
+
+
+
+
+            this.Pcard.appendChild(this.mainPart);
         this.Pcard.appendChild(this.toolsPart);
 
         portfolio.appendChild(this.Pcard);

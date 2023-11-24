@@ -221,6 +221,18 @@ main #projects #portfolio .project {
   border: dotted rgb(16, 233, 86) 1px;
   margin: 20px 0;
 }
+main #projects #portfolio .project:nth-child(2n) {
+  flex-direction: row;
+}
+main #projects #portfolio .project:nth-child(2n) .projectMain {
+  border-right: dashed rgb(16, 233, 86) 1px;
+}
+main #projects #portfolio .project:nth-child(2n+1) {
+  flex-direction: row-reverse;
+}
+main #projects #portfolio .project:nth-child(2n+1) .projectMain {
+  border-left: dashed rgb(16, 233, 86) 1px;
+}
 main #projects #portfolio .project .projectMain {
   display: flex;
   flex-direction: column;
@@ -249,7 +261,6 @@ main #projects #portfolio .project .projectTools {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  border-left: dashed rgb(16, 233, 86) 1px;
 }
 main #projects #portfolio .project .projectTools img {
   width: 25%;
