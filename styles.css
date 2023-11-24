@@ -7,12 +7,10 @@
   0% {
     background-position: left bottom;
   }
-
   100% {
     background-position: right bottom;
   }
 }
-
 body {
   margin: 75px 0 0 0;
   font-size: 1.2em;
@@ -24,7 +22,6 @@ section {
   width: 80%;
   margin: 3em auto;
 }
-
 section h2 {
   margin: 1em auto;
   color: rgb(16, 233, 86);
@@ -51,12 +48,10 @@ header {
   margin: 0;
   padding: 0;
 }
-
 header img {
   height: 75%;
   padding-left: 2%;
 }
-
 header nav {
   width: 60%;
   height: 100%;
@@ -64,7 +59,6 @@ header nav {
   justify-content: space-between;
   padding-right: 2%;
 }
-
 header nav div {
   height: 100%;
   width: 20%;
@@ -72,13 +66,11 @@ header nav div {
   justify-content: center;
   align-items: center;
 }
-
 header nav a {
   text-decoration: none;
   color: #333333;
   transition: transform 0.2s;
 }
-
 header nav div:hover a {
   color: white;
   transform: scale(1.2);
@@ -90,11 +82,9 @@ header nav div:hover a {
   justify-content: center;
   align-items: center;
 }
-
 #divTitle img {
   width: 120%;
 }
-
 #divTitle #presentation {
   position: absolute;
   background: linear-gradient(to right, white, rgb(16, 233, 86), white, rgb(16, 233, 86), white);
@@ -103,7 +93,6 @@ header nav div:hover a {
   -webkit-background-clip: text;
   background-clip: text;
 }
-
 #divTitle #presentation h1 {
   background: linear-gradient(to right, rgb(16, 233, 86), white, rgb(16, 233, 86), white, rgb(16, 233, 86));
   background-size: 200% 100%;
@@ -127,61 +116,52 @@ main {
   -webkit-background-clip: text;
   background-clip: text;
 }
-
 main #about {
   display: flex;
   align-items: center;
 }
-
 main #about #description {
   width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-main #about #description h4 {
-  margin: 20px;
+main #about #description .subtitle {
+  margin: 40px 0 20px 0;
+  font-size: 1.2em;
+  font-weight: 800;
 }
-
 main #about #description p {
   margin-bottom: 20px;
   margin-top: 0;
 }
-
 main #about #description #descDivs {
   width: 100%;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
-
 main #about #description #descDivs #lol,
 main #about #description #descDivs #spotify {
   width: 45%;
   border: solid;
   display: none;
 }
-
 main #tools {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
-
 main #tools h2 {
   width: 100%;
 }
-
 main #tools p {
   width: 100%;
   margin: 0 0 25px 0;
 }
-
 main #tools #competencesDiv {
   width: 70%;
 }
-
 main #tools #competencesDiv div {
   display: flex;
   justify-content: space-between;
@@ -189,21 +169,17 @@ main #tools #competencesDiv div {
   height: 40px;
   margin: 4px 0;
 }
-
 main #tools #competencesDiv div .pValue {
   display: none;
 }
-
 main #tools #competencesDiv div .pName {
   width: 25%;
   margin: 0;
 }
-
 main #tools #competencesDiv div img {
   max-width: 25%;
   height: 100%;
 }
-
 main #tools #competencesDiv div .progressBarFix {
   display: flex;
   justify-content: start;
@@ -212,38 +188,31 @@ main #tools #competencesDiv div .progressBarFix {
   background-color: rgb(125, 125, 125);
   border-radius: 6px;
 }
-
 main #tools #competencesDiv div .progressBar {
   background-color: #4CAF50;
   border-radius: 6px;
   height: 100%;
 }
-
 main #tools #cvDiv {
   width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 main #tools #cvDiv img {
   width: 50%;
 }
-
 main #tools #cvDiv a {
   color: rgb(16, 233, 86);
 }
-
 main #tools #cvDiv a:hover {
   box-shadow: 0 0 10px rgb(16, 233, 86);
 }
-
 main #projects #portfolio {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-
 main #projects #portfolio div {
   width: 45%;
   display: flex;
@@ -253,33 +222,27 @@ main #projects #portfolio div {
   border: dotted rgb(16, 233, 86) 1px;
   margin: 20px 0;
 }
-
 main #projects #portfolio div p {
   width: 50%;
 }
-
 main #projects #portfolio div img {
   max-width: 50%;
   max-height: 200px;
 }
-
 main #projects #portfolio div:hover img {
   transition: transform 0.2s;
   transform: scale(1.2);
 }
-
 main #projects #portfolio div:active {
   transition: transform 0s;
   transform: scale(0.9);
 }
-
 main #contact #socials img {
   width: 80px;
   border-radius: 50%;
   transition: transform 0.3s, background-color 0.3s;
   margin: 0 10px;
 }
-
 main #contact #socials img:hover {
   background-color: rgb(16, 233, 86);
   transform: scale(1.2);
@@ -290,7 +253,6 @@ footer {
   width: 100%;
   background-color: rgb(16, 233, 86);
 }
-
 footer p {
   margin: 0;
 }
@@ -299,30 +261,24 @@ footer p {
   * {
     font-size: 85%;
   }
-
   header nav {
     align-items: flex-end;
     width: 75%;
   }
-
   #about {
     justify-content: center;
   }
-
   #about #imgMe {
     display: none;
   }
 }
-
 @media screen and (min-width: 801px) {
   nav {
     align-items: center;
   }
-
   nav a {
     display: inline-block;
   }
-
   #about {
     justify-content: space-between;
   }
