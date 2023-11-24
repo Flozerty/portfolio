@@ -212,7 +212,7 @@ main #projects #portfolio {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0 5%;
+  padding: 0;
 }
 main #projects #portfolio .project {
   width: 48%;
