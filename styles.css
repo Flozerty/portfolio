@@ -217,6 +217,7 @@ main #projects #portfolio {
 main #projects #portfolio .project {
   width: 48%;
   display: flex;
+  justify-content: space-between;
   border: dotted rgb(16, 233, 86) 1px;
   margin: 20px 0;
 }
@@ -225,7 +226,6 @@ main #projects #portfolio .project .projectMain {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: solid;
   width: 70%;
 }
 main #projects #portfolio .project .projectMain p {
@@ -245,8 +245,14 @@ main #projects #portfolio .project .projectMain:active {
 }
 main #projects #portfolio .project .projectTools {
   width: 25%;
-  border: solid;
-  color: blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-left: dashed rgb(16, 233, 86) 1px;
+}
+main #projects #portfolio .project .projectTools img {
+  width: 25%;
 }
 main #contact #socials img {
   width: 80px;
