@@ -56,7 +56,7 @@ class Project {
 new Project(
     'Pokédex',
     './src/projects/pokedex.png',
-    'un pokedex',
+    'Un pokédex qui trie les pokémons par type, et, ou par génération + cris des pokemons.',
     'https://flozerty.github.io/Flokedex-JSavance/',
     ['html', 'sass', 'js']
 )
@@ -64,7 +64,7 @@ new Project(
 new Project(
     'Gaming Place',
     './src/projects/gamingplace.png',
-    'un site vitrine de créateurs de jeux',
+    'Un site vitrine de créateurs de jeux',
     'https://flozerty.github.io/TP-JS/',
     ['html', 'css', 'js']
 
@@ -82,7 +82,7 @@ new Project(
 new Project(
     'Portfolio',
     './src/projects/portfolio.png',
-    'Le portfolio que vous voyez ici présent!',
+    'Le portfolio que vous voyez actuellement!',
     'https://flozerty.github.io/portfolio/',
     ['html', 'sass', 'js']
 )
