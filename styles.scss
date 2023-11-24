@@ -265,10 +265,11 @@ main {
         #portfolio {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-around;
+            justify-content: space-between;
+            padding: 0 5%;
 
             div {
-                width: 45%;
+                width: 48%;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
