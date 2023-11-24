@@ -58,7 +58,7 @@ new Project(
     './src/projects/pokedex.png',
     'un pokedex',
     'https://flozerty.github.io/Flokedex-JSavance/',
-    ['html', 'js']
+    ['html', 'sass', 'js']
 )
 
 new Project(
@@ -66,7 +66,7 @@ new Project(
     './src/projects/gamingplace.png',
     'un site vitrine de créateurs de jeux',
     'https://flozerty.github.io/TP-JS/',
-    ['html', 'sass', 'js']
+    ['html', 'css', 'js']
 
 )
 
