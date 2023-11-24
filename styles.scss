@@ -268,35 +268,47 @@ main {
             justify-content: space-between;
             padding: 0 5%;
 
-            div {
+            .project {
                 width: 48%;
                 display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
                 border: dotted $color2 1px;
                 margin: 20px 0;
 
-                p {
-                    width: 50%;
-                }
+                .projectMain {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    border: solid;
+                    width: 70%;
+
+                    p {
+                        width: 50%;
+                    }
 
 
-                img {
-                    max-width: 50%;
-                    max-height: 200px;
-                }
-
-                &:hover {
                     img {
-                        transition: transform 0.2s;
-                        transform: scale(1.2);
+                        max-width: 50%;
+                        max-height: 200px;
+                    }
+
+                    &:hover {
+                        img {
+                            transition: transform 0.2s;
+                            transform: scale(1.2);
+                        }
+                    }
+
+                    &:active {
+                        transition: transform 0s;
+                        transform: scale(0.9);
                     }
                 }
 
-                &:active {
-                    transition: transform 0s;
-                    transform: scale(0.9);
+                .projectTools {
+                    width: 25%;
+                    border: solid;
+                    color: blue;
                 }
             }
 
