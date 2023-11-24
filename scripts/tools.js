@@ -49,6 +49,6 @@ new Tool('css', 90);
 new Tool('js', 80);
 new Tool('git', 85);
 new Tool('sass', 85);
-new Tool('angular', 55);
+new Tool('angular', 65);
 new Tool('node', 60);
-new Tool('react', 65);
+new Tool('react', 50);
