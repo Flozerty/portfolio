@@ -64,3 +64,11 @@ new Project(
     'Le portfolio que vous voyez ici présent!',
     'https://flozerty.github.io/portfolio/'
 )
+
+new Project(
+    'PlanetBodies.com',
+    './src/projects/planetBodies.png',
+    'Un site de référencement des satellites de notre système',
+    'https://flozerty.github.io/TP-Angular/'
+
+)
