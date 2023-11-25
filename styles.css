@@ -1,6 +1,5 @@
 * {
   cursor: url(src/cursor.png) 6 1, pointer;
-  font-family: "Pacifico", cursive;
 }
 
 @keyframes colorScroll {
@@ -11,6 +10,13 @@
     background-position: right bottom;
   }
 }
+hr {
+  width: 70%;
+  margin: 0 auto;
+  border-color: #333333;
+  border-width: 1px 0 0 0;
+}
+
 body {
   margin: 75px 0 0 0;
   font-size: 1.2em;
@@ -25,13 +31,6 @@ section {
 section h2 {
   margin: 1em auto;
   color: rgb(16, 233, 86);
-}
-
-hr {
-  width: 70%;
-  margin: 0 auto;
-  border-color: #333333;
-  border-width: 1px 0 0 0;
 }
 
 header {
@@ -90,7 +89,6 @@ header nav div:hover a {
   background: linear-gradient(to right, white, rgb(16, 233, 86), white, rgb(16, 233, 86), white);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
   background-clip: text;
 }
 #divTitle #presentation h1 {
@@ -99,12 +97,10 @@ header nav div:hover a {
   animation: colorScroll 2.5s linear infinite;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
   background-clip: text;
   margin-top: 0;
   font-size: 3em;
-  display: inline-block;
-  position: relative;
+  font-family: "Pacifico", cursive;
 }
 
 main {
@@ -121,7 +117,6 @@ main #about {
   align-items: center;
 }
 main #about #description {
-  width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -159,9 +154,6 @@ main #tools p {
   width: 100%;
   margin: 0 0 25px 0;
 }
-main #tools #competencesDiv {
-  width: 70%;
-}
 main #tools #competencesDiv div {
   display: flex;
   justify-content: space-between;
@@ -194,7 +186,6 @@ main #tools #competencesDiv div .progressBar {
   height: 100%;
 }
 main #tools #cvDiv {
-  width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -296,8 +287,22 @@ footer p {
   #about {
     justify-content: center;
   }
-  #about #imgMe {
+  #about img {
     display: none;
+  }
+  #about #description {
+    width: 100%;
+  }
+  #tools {
+    flex-direction: column;
+    justify-content: center;
+  }
+  #tools #competencesDiv {
+    width: 100%;
+  }
+  #tools #cvDiv {
+    margin-top: 50px;
+    width: 50%;
   }
 }
 @media screen and (min-width: 801px) {
@@ -309,6 +314,15 @@ footer p {
   }
   #about {
     justify-content: space-between;
+  }
+  #about #description {
+    width: 60%;
+  }
+  #tools #competencesDiv {
+    width: 70%;
+  }
+  #tools #cvDiv {
+    width: 30%;
   }
 }
 
