@@ -206,30 +206,15 @@ main #projects #portfolio {
   padding: 0;
 }
 main #projects #portfolio .project {
-  width: 48%;
   display: flex;
   justify-content: space-between;
   border: dotted rgb(16, 233, 86) 1px;
   margin: 20px 0;
 }
-main #projects #portfolio .project:nth-child(2n) {
-  flex-direction: row;
-}
-main #projects #portfolio .project:nth-child(2n) .projectMain {
-  border-right: dashed rgb(16, 233, 86) 1px;
-}
-main #projects #portfolio .project:nth-child(2n+1) {
-  flex-direction: row-reverse;
-}
-main #projects #portfolio .project:nth-child(2n+1) .projectMain {
-  border-left: dashed rgb(16, 233, 86) 1px;
-}
 main #projects #portfolio .project .projectMain {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 70%;
 }
 main #projects #portfolio .project .projectMain p {
   width: 50%;
@@ -239,9 +224,7 @@ main #projects #portfolio .project .projectMain img {
   max-height: 200px;
 }
 main #projects #portfolio .project .projectTools {
-  width: 25%;
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
@@ -278,7 +261,7 @@ footer p {
 
 @media screen and (max-width: 800px) {
   * {
-    font-size: 85%;
+    font-size: 100%;
   }
   header nav {
     align-items: flex-end;
@@ -304,6 +287,18 @@ footer p {
     margin-top: 50px;
     width: 50%;
   }
+  .project {
+    width: 100%;
+    padding: 20px;
+  }
+  .project .projectMain {
+    width: 80%;
+  }
+  .project .projectTools {
+    width: 15%;
+    flex-direction: column;
+    justify-content: end;
+  }
 }
 @media screen and (min-width: 801px) {
   nav {
@@ -323,6 +318,30 @@ footer p {
   }
   #tools #cvDiv {
     width: 30%;
+  }
+  .project {
+    width: 48%;
+  }
+  .project:nth-child(2n) {
+    flex-direction: row;
+  }
+  .project:nth-child(2n) .projectMain {
+    border-right: dashed rgb(16, 233, 86) 1px;
+  }
+  .project:nth-child(2n+1) {
+    flex-direction: row-reverse;
+  }
+  .project:nth-child(2n+1) .projectMain {
+    border-left: dashed rgb(16, 233, 86) 1px;
+  }
+  .project .projectMain {
+    width: 70%;
+    flex-direction: column;
+  }
+  .project .projectTools {
+    margin-top: 20px;
+    width: 25%;
+    flex-direction: column;
   }
 }
 
