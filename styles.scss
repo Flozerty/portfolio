@@ -256,7 +256,6 @@ main {
     }
 
     #projects {
-
         #portfolio {
             display: flex;
             flex-wrap: wrap;
@@ -285,7 +284,6 @@ main {
                 }
 
                 .projectTools {
-
                     display: flex;
                     justify-content: space-around;
                     align-items: center;
@@ -406,7 +404,6 @@ footer {
         justify-content: space-between;
 
         #description {
-
             width: 60%;
         }
     }
@@ -446,11 +443,9 @@ footer {
         }
 
         .projectTools {
-
             margin-top: 20px;
             width: 25%;
             flex-direction: column;
         }
     }
-
 }
