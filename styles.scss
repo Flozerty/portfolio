@@ -12,6 +12,11 @@
     src: url('src/fonts/Kanit/Kanit-MediumItalic.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: "DancingScript";
+    src: url(src/fonts/Dancing_Script/DancingScript-Bold.ttf) format('truetype');
+}
+
 @mixin flexCenter {
     display: flex;
     justify-content: center;
@@ -136,13 +141,13 @@ header {
         h1 {
             background: linear-gradient(to right, $color2, white, $color2, white, $color2);
             background-size: 200% 100%;
-            animation: colorScroll 2.5s linear infinite;
+            animation: colorScroll 2s linear infinite;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
             margin-top: 0;
-            font-size: 3em;
-            font-family: 'Pacifico', cursive;
+            font-size: 6em;
+            font-family: 'DancingScript', cursive, sans-serif;
         }
     }
 }
