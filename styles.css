@@ -6,6 +6,10 @@
   font-family: "NovaSquare";
   src: url("src/fonts/Nova_Square/NovaSquare-Regular.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Kanit";
+  src: url("src/fonts/Kanit/Kanit-MediumItalic.ttf") format("truetype");
+}
 @keyframes colorScroll {
   0% {
     background-position: left bottom;
@@ -26,6 +30,7 @@ body {
   font-size: 1.2em;
   text-align: center;
   background-color: #333333;
+  font-family: "Kanit", sans-serif;
 }
 
 h2,
