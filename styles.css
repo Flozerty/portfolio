@@ -2,6 +2,10 @@
   cursor: url(src/cursor.png) 6 1, pointer;
 }
 
+@font-face {
+  font-family: "NovaSquare";
+  src: url("src/fonts/Nova_Square/NovaSquare-Regular.ttf") format("truetype");
+}
 @keyframes colorScroll {
   0% {
     background-position: left bottom;
@@ -22,6 +26,11 @@ body {
   font-size: 1.2em;
   text-align: center;
   background-color: #333333;
+}
+
+h2,
+h3 {
+  font-family: "NovaSquare", sans-serif;
 }
 
 section {
@@ -46,6 +55,7 @@ header {
   z-index: 5;
   margin: 0;
   padding: 0;
+  font-family: "NovaSquare", sans-serif;
 }
 header img {
   height: 75%;
@@ -80,6 +90,7 @@ header nav div:hover a {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "NovaSquare", sans-serif;
 }
 #divTitle img {
   width: 120%;
@@ -125,6 +136,7 @@ main #about #description .subtitle {
   margin: 40px 0 20px 0;
   font-size: 1.2em;
   font-weight: 800;
+  font-family: "NovaSquare", sans-serif;
 }
 main #about #description p {
   margin-bottom: 20px;

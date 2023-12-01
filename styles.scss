@@ -2,6 +2,11 @@
     cursor: url(src/cursor.png) 6 1, pointer;
 }
 
+@font-face {
+    font-family: "NovaSquare";
+    src: url('src/fonts/Nova_Square/NovaSquare-Regular.ttf') format('truetype');
+}
+
 @mixin flexCenter {
     display: flex;
     justify-content: center;
@@ -33,6 +38,12 @@ body {
     font-size: 1.2em;
     text-align: center;
     background-color: $color1;
+
+}
+
+h2,
+h3 {
+    font-family: 'NovaSquare', sans-serif;
 }
 
 section {
@@ -44,7 +55,6 @@ section {
         color: $color2;
     }
 }
-
 
 header {
     display: flex;
@@ -59,6 +69,7 @@ header {
     z-index: 5;
     margin: 0;
     padding: 0;
+    font-family: 'NovaSquare', sans-serif;
 
     img {
         height: 75%;
@@ -101,6 +112,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'NovaSquare', sans-serif;
 
     img {
         width: 120%;
@@ -153,6 +165,7 @@ main {
                 margin: 40px 0 20px 0;
                 font-size: 1.2em;
                 font-weight: 800;
+                font-family: 'NovaSquare', sans-serif;
             }
 
             p {
