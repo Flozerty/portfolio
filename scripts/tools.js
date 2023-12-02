@@ -38,8 +38,8 @@ class Tool {
         this.Tcard.appendChild(this.progressBarFix);
         this.Tcard.appendChild(this.toolValue);
 
-        this.Tcard.title = `${this.tool} : ${this.nbr}%`;
-
+        /*         this.Tcard.title = `${this.tool} : ${this.nbr}%`;
+         */
         competencesDiv.appendChild(this.Tcard);
     }
 }
