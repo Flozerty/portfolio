@@ -58,7 +58,7 @@ new Project(
     './src/projects/pokedex.png',
     'Un pokédex qui trie les pokémons par type, et, ou par génération + cris des pokemons.',
     'https://flozerty.github.io/Flokedex-JSavance/',
-    ['html', 'sass', 'js']
+    ['html_5', 'sass', 'js']
 )
 
 new Project(
@@ -66,7 +66,7 @@ new Project(
     './src/projects/gamingplace.png',
     'Un site vitrine de créateurs de jeux',
     'https://flozerty.github.io/TP-JS/',
-    ['html', 'css', 'js']
+    ['html_5', 'css_3', 'js']
 
 )
 
@@ -84,7 +84,7 @@ new Project(
     './src/projects/portfolio.png',
     'Le portfolio que vous voyez actuellement!',
     'https://flozerty.github.io/portfolio/',
-    ['html', 'sass', 'js']
+    ['html_5', 'sass', 'js']
 )
 
 new Project(
