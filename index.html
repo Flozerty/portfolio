@@ -31,18 +31,28 @@
         </nav>
     </header>
 
-    <section id="divTitle">
+    <div id="divTitle">
         <img src="src/fondClavier.jpg" alt="arrière-plan de clavier lumineux" id="imgProfil" />
         <div id="presentation">
             <h1>Floris Louërat</h1>
             <p>développeur Web FullStack Junior</p>
         </div>
-    </section>
+    </div>
     <hr>
     <main>
 
         <section id="about">
-            <img src="" alt="Hé non! Tu veux voir ma tête ? Appelles-moi ;)" id="imgMe" />
+            <div id="imgContainer">
+                <img src="" alt="" id="imgMe" />
+                <script>
+                    const imgElement = document.getElementById('imgMe');
+                    imgElement.alt = "Hé non! Tu veux voir ma tête ? Appelles-moi";
+
+                    const span = document.createElement('span');
+                    span.innerHTML = " 💖"
+                    imgElement.parentNode.insertBefore(span, imgElement.nextSibling);
+                </script>
+            </div>
 
             <div id='description'>
                 <h2>&Agrave; propos de moi</h2>
@@ -51,8 +61,8 @@
                     à la 3W Academy.
                 </p>
                 <p>
-                    Ancien chef de cuisine / sushiman, ma transition vers le développement web a été motivée par ma
-                    passion pour l'informatique, la logique et l'algorithmique.
+                    Ancien chef de cuisine / sushiman <span>🍣</span>, ma transition vers le développement web a été
+                    motivée par ma passion pour l'informatique, la logique et l'algorithmique.
                 </p>
 
                 <p class="subtitle">Passion & Personnalité</p>

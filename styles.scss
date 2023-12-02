@@ -127,7 +127,7 @@ header {
     font-family: 'NovaSquare', sans-serif;
 
     img {
-        width: 120%;
+        width: 96%;
     }
 
     #presentation {
@@ -167,6 +167,16 @@ main {
         display: flex;
         align-items: center;
 
+        img[alt="Hé non! Tu veux voir ma tête ? Appelles-moi 💖"] {
+            color: initial;
+            -webkit-text-fill-color: initial;
+        }
+
+        span {
+            color: initial;
+            -webkit-text-fill-color: initial;
+
+        }
 
         #description {
             display: flex;
