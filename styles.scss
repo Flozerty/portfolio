@@ -147,7 +147,8 @@ header {
             background-clip: text;
             margin-top: 0;
             font-size: 6em;
-            font-family: 'DancingScript', cursive, sans-serif;
+            font-family: 'DancingScript', cursive;
+            font-weight: 100;
         }
     }
 }
@@ -166,11 +167,6 @@ main {
     #about {
         display: flex;
         align-items: center;
-
-        img[alt="Hé non! Tu veux voir ma tête ? Appelles-moi 💖"] {
-            color: initial;
-            -webkit-text-fill-color: initial;
-        }
 
         span {
             color: initial;

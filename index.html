@@ -45,12 +45,13 @@
             <div id="imgContainer">
                 <img src="" alt="" id="imgMe" />
                 <script>
-                    const imgElement = document.getElementById('imgMe');
-                    imgElement.alt = "Hé non! Tu veux voir ma tête ? Appelles-moi";
+                    const img = document.getElementById('imgMe');
+                    img.alt = "Hé non! Tu veux voir ma tête ? Appelles-moi";
 
                     const span = document.createElement('span');
                     span.innerHTML = " 💖"
-                    imgElement.parentNode.insertBefore(span, imgElement.nextSibling);
+/*                     img.alt = `${img.alt + span}`;
+ */                    img.parentNode.insertBefore(span, img.nextSibling);
                 </script>
             </div>
 
