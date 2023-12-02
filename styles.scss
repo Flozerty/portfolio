@@ -227,13 +227,16 @@ main {
         }
 
         #competencesDiv {
+            display: flex;
+            flex-wrap: wrap;
 
             div {
                 display: flex;
-                justify-content: space-between;
+                justify-content: center;
                 align-items: center;
                 height: 40px;
                 margin: 4px 0;
+                width: 50%;
 
                 .pValue {
                     display: none;
@@ -257,6 +260,7 @@ main {
                     height: 12px;
                     background-color: rgb(125, 125, 125);
                     border-radius: 6px;
+                    display: none;
                 }
 
                 .progressBar {

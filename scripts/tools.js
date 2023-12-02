@@ -13,7 +13,7 @@ class Tool {
 
         this.toolName = document.createElement('p');
         this.toolName.classList.add('pName');
-        this.toolName.innerHTML = this.tool;
+        this.toolName.innerHTML = this.tool.toUpperCase();
 
         this.toolValue = document.createElement('p');
         this.toolValue.classList.add('pValue');
@@ -44,8 +44,8 @@ class Tool {
     }
 }
 
-new Tool('html', 87);
-new Tool('css', 92);
+new Tool('html_5', 87);
+new Tool('css_3', 92);
 new Tool('js', 88);
 new Tool('git', 97);
 new Tool('sass', 90);
