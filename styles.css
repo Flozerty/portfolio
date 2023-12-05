@@ -118,7 +118,7 @@ header nav div:hover a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  margin-top: 0;
+  margin: 0;
   font-size: 6em;
   font-family: "DancingScript", cursive;
   font-weight: 100;
@@ -293,11 +293,14 @@ footer p {
 
 @media screen and (max-width: 800px) {
   * {
-    font-size: 100%;
+    font-size: 80%;
   }
   header nav {
     align-items: flex-end;
     width: 75%;
+  }
+  h1 {
+    font-size: 50%;
   }
   #about {
     justify-content: center;
