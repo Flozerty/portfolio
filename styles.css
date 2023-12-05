@@ -305,7 +305,7 @@ footer p {
   #about {
     justify-content: center;
   }
-  #about img {
+  #about #imgContainer {
     display: none;
   }
   #about #description {
