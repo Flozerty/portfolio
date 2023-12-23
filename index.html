@@ -90,15 +90,12 @@
             <div id="cvDiv">
                 <img src="src/cvImg.png" alt="cv de Floris" id="cvImg" />
                 <a href="cv.pdf" download="cvFlorisLouërat.pdf">Télécharger le CV</a>
+
+                <script>
+                    const cvImg = document.getElementById('cvImg');
+                    cvImg.addEventListener('click', () => { window.open('cv.pdf') })
+                </script>
             </div>
-            <script>
-                const cvImg = document.getElementById('cvImg');
-
-                cvImg.addEventListener('click', () => {
-                    window.location.href = 'cv.pdf'
-                })
-            </script>
-
         </section>
         <hr>
         <section id="projects">

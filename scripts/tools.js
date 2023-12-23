@@ -52,4 +52,4 @@ new Tool('sass', 90);
 new Tool('angular', 70);
 new Tool('ts', 83);
 new Tool('react', 55);
-new Tool('node', 40);
+/* new Tool('node', 40); */
