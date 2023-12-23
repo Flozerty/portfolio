@@ -88,9 +88,16 @@
             <div id="competencesDiv"></div>
 
             <div id="cvDiv">
-                <img src="src/cvImg.png" alt="cv de Floris" />
+                <img src="src/cvImg.png" alt="cv de Floris" id="cvImg" />
                 <a href="cv.pdf" download="cvFlorisLouërat.pdf">Télécharger le CV</a>
             </div>
+            <script>
+                const cvImg = document.getElementById('cvImg');
+
+                cvImg.addEventListener('click', () => {
+                    window.location.href = 'cv.pdf'
+                })
+            </script>
 
         </section>
         <hr>
@@ -120,6 +127,7 @@
         <p>©Copyright 2023 - Floris Louërat</p>
     </footer>
 </body>
+
 <script src="scripts/navScroll.js"></script>
 <script src="scripts/tools.js"></script>
 <script src="scripts/projects.js"></script>
