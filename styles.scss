@@ -17,12 +17,6 @@
     src: url(src/fonts/Dancing_Script/DancingScript-Bold.ttf) format('truetype');
 }
 
-@mixin flexCenter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 @keyframes colorScroll {
     0% {
         background-position: left bottom;
@@ -96,7 +90,9 @@ header {
         div {
             height: 100%;
             width: 20%;
-            @include flexCenter
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         a {
@@ -116,6 +112,9 @@ header {
     }
 }
 
+//////////////////////////////////////////
+//////////////// divTitle ////////////////
+//////////////////////////////////////////
 #divTitle {
 
     position: relative;
@@ -168,6 +167,10 @@ main {
     -webkit-background-clip: text;
     background-clip: text;
 
+    //////////////////////////////////////////
+    ////////////////// about /////////////////
+    //////////////////////////////////////////
+
     #about {
         display: flex;
         align-items: center;
@@ -175,6 +178,11 @@ main {
         span {
             color: initial;
             -webkit-text-fill-color: initial;
+
+        }
+
+        #imgContainer {
+            padding-right: 20px;
 
         }
 
@@ -214,6 +222,10 @@ main {
 
 
     }
+
+    //////////////////////////////////////////
+    ///////////////// tools //////////////////
+    //////////////////////////////////////////
 
     #tools {
         display: flex;
@@ -294,6 +306,10 @@ main {
         }
     }
 
+    //////////////////////////////////////////
+    //////////////// projects ////////////////
+    //////////////////////////////////////////
+
     #projects {
         #portfolio {
             display: flex;
@@ -347,6 +363,10 @@ main {
         }
     }
 
+    //////////////////////////////////////////
+    //////////////// contact /////////////////
+    //////////////////////////////////////////
+
     #contact {
         #socials {
             img {
@@ -365,6 +385,10 @@ main {
     }
 }
 
+//////////////////////////////////////////
+///////////////// footer /////////////////
+//////////////////////////////////////////
+
 footer {
     p {
         margin: 0;
@@ -374,6 +398,10 @@ footer {
     width: 100%;
     background-color: $color2 ;
 }
+
+//////////////////////////////////////////
+////////////////// media /////////////////
+//////////////////////////////////////////
 
 @media screen and (max-width: 800px) {
     * {
@@ -445,6 +473,11 @@ footer {
 
     #about {
         justify-content: space-between;
+
+        #imgContainer {
+            padding-right: 0;
+
+        }
 
         #description {
             width: 60%;

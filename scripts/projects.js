@@ -15,10 +15,10 @@ class Project {
         this.mainPart = document.createElement('div');
         this.mainPart.classList.add('projectMain');
 
-        this.toolsPart = document.createElement('div');
+        this.toolsPart = document.createElement('aside');
         this.toolsPart.classList.add('projectTools');
 
-        this.Pcard = document.createElement('div');
+        this.Pcard = document.createElement('article');
         this.Pcard.classList.add('project');
 
         this.Pname = document.createElement('h3');

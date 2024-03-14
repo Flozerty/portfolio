@@ -142,6 +142,9 @@ main #about span {
   color: initial;
   -webkit-text-fill-color: initial;
 }
+main #about #imgContainer {
+  padding-right: 20px;
+}
 main #about #description {
   display: flex;
   flex-direction: column;
@@ -345,6 +348,9 @@ footer p {
   }
   #about {
     justify-content: space-between;
+  }
+  #about #imgContainer {
+    padding-right: 0;
   }
   #about #description {
     width: 60%;
